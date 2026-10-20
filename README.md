@@ -19,11 +19,35 @@ LogMind AI is a web-based application that analyzes log files to identify errors
 
 ## How It Works
 
-Users upload a log file through the frontend. The backend processes the file using predefined rules, identifies potential issues, and returns the analysis results to the dashboard.
+Users upload a `.log` or `.txt` file through the React frontend. The FastAPI backend processes the log entries using predefined rules to identify errors and potential anomalies. The results, including summary statistics and affected services, are displayed on the dashboard.
+
+```text
+User Uploads Log File
+         ↓
+React Frontend
+         ↓
+FastAPI Backend
+         ↓
+Log Processing
+         ↓
+Rule-Based Analysis
+         ↓
+Generate Analysis Results
+         ↓
+Display Results on Dashboard
+```
 
 ## How to Run
 
-The project requires Python 3, Node.js, and npm. Clone the repository, install the backend dependencies from `backend/requirements.txt`, and start the FastAPI server. Then install the frontend dependencies in the `frontend` folder and start the application using Vite.
+The project requires Python 3, Node.js, and npm.
+
+1. Clone the GitHub repository.
+2. Install the backend dependencies from `backend/requirements.txt`.
+3. Start the FastAPI backend server.
+4. Open a second terminal and navigate to the `frontend` folder.
+5. Install the frontend dependencies and start the application using Vite.
+6. Open the local URL displayed in the terminal to access LogMind AI.
+
 
 ## Limitations
 
