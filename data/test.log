@@ -1,0 +1,10 @@
+2026-10-05 10:01:22 INFO UserService User login successful
+2026-10-05 10:02:10 INFO APIService Request processed successfully
+2026-10-05 10:03:15 WARNING Database Connection pool is running low
+2026-10-05 10:04:01 ERROR Database Connection timeout
+2026-10-05 10:04:05 ERROR Database Failed to connect to database
+2026-10-05 10:05:12 INFO UserService User profile loaded
+2026-10-05 10:06:33 WARNING Network High latency detected
+2026-10-05 10:07:10 ERROR Network Connection refused
+2026-10-05 10:08:45 CRITICAL APIService Service unavailable
+2026-10-05 10:09:20 INFO UserService Request completed

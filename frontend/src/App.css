@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f8fa;
+  color: #172033;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  height: 72px;
+  background: white;
+  border-bottom: 1px solid #e6e9ef;
+  display: flex;
+  align-items: center;
+  padding: 0 7%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.brand p {
+  margin: 3px 0 0;
+  color: #8a93a3;
+  font-size: 12px;
+}
+
+.container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 70px 25px;
+}
+
+.hero {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin: 14px 0;
+}
+
+.hero p {
+  color: #687386;
+  line-height: 1.7;
+}
+
+.upload-card {
+  background: white;
+  max-width: 620px;
+  margin: 45px auto;
+  padding: 45px;
+  border: 1px solid #e3e7ee;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(20, 30, 50, 0.06);
+}
+
+.upload-icon {
+  width: 55px;
+  height: 55px;
+  margin: auto;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+}
+
+.upload-card h3 {
+  margin: 20px 0 8px;
+}
+
+.upload-card p {
+  color: #7b8494;
+}
+
+.file-button {
+  display: inline-block;
+  margin: 18px 0;
+  padding: 11px 20px;
+  border-radius: 8px;
+  background: #172033;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.file-button input {
+  display: none;
+}
+
+.selected-file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f7fa;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.selected-file button {
+  border: 0;
+  background: transparent;
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.analyze-button {
+  width: 100%;
+  border: 0;
+  border-radius: 9px;
+  padding: 13px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.analyze-button:disabled {
+  background: #b9c2d0;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 15px;
+  color: #dc3545;
+  font-size: 13px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.features div {
+  background: white;
+  padding: 22px;
+  border: 1px solid #e5e9ef;
+  border-radius: 12px;
+}
+
+.features strong {
+  color: #2563eb;
+  font-size: 12px;
+}
+
+.features h3 {
+  margin-bottom: 5px;
+}
+
+.features p {
+  color: #7b8494;
+  font-size: 13px;
+}
+
+.report-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.report-heading h2 {
+  margin: 10px 0 5px;
+  font-size: 34px;
+}
+
+.report-heading p {
+  color: #7b8494;
+  margin: 0;
+}
+
+.new-analysis {
+  background: white;
+  border: 1px solid #dce1e8;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  background: white;
+  border: 1px solid #e4e8ee;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.stat span {
+  display: block;
+  color: #7b8494;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.stat strong {
+  font-size: 28px;
+}
+
+.danger {
+  color: #dc3545;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.report-card {
+  background: white;
+  border: 1px solid #e4e8ee;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 18px;
+}
+
+.report-card h3 {
+  margin-top: 0;
+}
+
+.report-card p {
+  color: #687386;
+  line-height: 1.6;
+}
+
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.service-row strong {
+  color: #dc3545;
+}
+
+@media (max-width: 750px) {
+  .stats,
+  .features,
+  .report-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .report-heading {
+    display: block;
+  }
+
+  .new-analysis {
+    margin-top: 15px;
+  }
+}
